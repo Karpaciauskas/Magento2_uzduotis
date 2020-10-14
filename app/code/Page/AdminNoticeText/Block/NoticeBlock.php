@@ -18,5 +18,6 @@ class NoticeBlock extends \Magento\Framework\View\Element\Template
 	public function getNoticeText(){
 	    return $this->helperData->getGeneralConfig('display_text');
 	}
+	
 }
 ?>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="page" translate="label" sortOrder="10">
+            <label>Page</label>
+        </tab>
+        <section id="product" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Product</label>
+            <tab>page</tab>
+            <resource>Page_AdminProductText::product_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General Configuration</label>
+                <field id="display_text_product" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Display Text for Product Label</label>
+                    <comment>This text will be displayed in product page after product label.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
